@@ -1,13 +1,16 @@
 # glob.[go](https://golang.org)
 
 [![GoDoc][godoc-image]][godoc-url] [![Build Status][travis-image]][travis-url]
+[![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/gomods/athens)
+[![Generic badge](https://img.shields.io/badge/GoModule-yes-<COLOR>.svg)](https://shields.io/)
+
 
 > Go Globbing Library.
 
 ## Install
 
 ```shell
-    go get github.com/gobwas/glob
+    go get github.com/yusank/glob
 ```
 
 ## Example
@@ -16,7 +19,7 @@
 
 package main
 
-import "github.com/gobwas/glob"
+import "github.com/yusank/glob"
 
 func main() {
     var g glob.Glob
@@ -109,8 +112,8 @@ Pattern | Fixture | Match | Speed (ns/op)
 `https://*.google.*` | `https://google.com` | `false` | 66
 `{https://*.google.*,*yandex.*,*yahoo.*,*mail.ru}` | `http://yahoo.com` | `true` | 163
 `{https://*.google.*,*yandex.*,*yahoo.*,*mail.ru}` | `http://google.com` | `false` | 197
-`{https://*gobwas.com,http://exclude.gobwas.com}` | `https://safe.gobwas.com` | `true` | 22
-`{https://*gobwas.com,http://exclude.gobwas.com}` | `http://safe.gobwas.com` | `false` | 24
+`{https://*yusank.com,http://exclude.yusank.com}` | `https://safe.yusank.com` | `true` | 22
+`{https://*yusank.com,http://exclude.yusank.com}` | `http://safe.yusank.com` | `false` | 24
 `abc*` | `abcdef` | `true` | 8.15
 `abc*` | `af` | `false` | 5.68
 `*def` | `abcdef` | `true` | 8.84
@@ -128,8 +131,8 @@ Pattern | Fixture | Match | Speed (ns/op)
 `^https:\/\/.*\.google\..*$` | `https://google.com` | `false` | 767
 `^(https:\/\/.*\.google\..*\|.*yandex\..*\|.*yahoo\..*\|.*mail\.ru)$` | `http://yahoo.com` | `true` | 1435
 `^(https:\/\/.*\.google\..*\|.*yandex\..*\|.*yahoo\..*\|.*mail\.ru)$` | `http://google.com` | `false` | 1674
-`^(https:\/\/.*gobwas\.com\|http://exclude.gobwas.com)$` | `https://safe.gobwas.com` | `true` | 1039
-`^(https:\/\/.*gobwas\.com\|http://exclude.gobwas.com)$` | `http://safe.gobwas.com` | `false` | 272
+`^(https:\/\/.*yusank\.com\|http://exclude.yusank.com)$` | `https://safe.yusank.com` | `true` | 1039
+`^(https:\/\/.*yusank\.com\|http://exclude.yusank.com)$` | `http://safe.yusank.com` | `false` | 272
 `^abc.*$` | `abcdef` | `true` | 237
 `^abc.*$` | `af` | `false` | 100
 `^.*def$` | `abcdef` | `true` | 464
@@ -137,10 +140,10 @@ Pattern | Fixture | Match | Speed (ns/op)
 `^ab.*ef$` | `abcdef` | `true` | 375
 `^ab.*ef$` | `af` | `false` | 145
 
-[godoc-image]: https://godoc.org/github.com/gobwas/glob?status.svg
-[godoc-url]: https://godoc.org/github.com/gobwas/glob
-[travis-image]: https://travis-ci.org/gobwas/glob.svg?branch=master
-[travis-url]: https://travis-ci.org/gobwas/glob
+[godoc-image]: https://godoc.org/github.com/yusank/glob?status.svg
+[godoc-url]: https://godoc.org/github.com/yusank/glob
+[travis-image]: https://travis-ci.org/yusank/glob.svg?branch=master
+[travis-url]: https://travis-ci.org/yusank/glob
 
 ## Syntax
 

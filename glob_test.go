@@ -14,7 +14,7 @@ const (
 	pattern_plain          = "google.com"
 	regexp_plain           = `^google\.com$`
 	fixture_plain_match    = "google.com"
-	fixture_plain_mismatch = "gobwas.com"
+	fixture_plain_mismatch = "yusank.com"
 
 	pattern_multiple          = "https://*.google.*"
 	regexp_multiple           = `^https:\/\/.*\.google\..*$`
@@ -26,11 +26,11 @@ const (
 	fixture_alternatives_match    = "http://yahoo.com"
 	fixture_alternatives_mismatch = "http://google.com"
 
-	pattern_alternatives_suffix                = "{https://*gobwas.com,http://exclude.gobwas.com}"
-	regexp_alternatives_suffix                 = `^(https:\/\/.*gobwas\.com|http://exclude.gobwas.com)$`
-	fixture_alternatives_suffix_first_match    = "https://safe.gobwas.com"
-	fixture_alternatives_suffix_first_mismatch = "http://safe.gobwas.com"
-	fixture_alternatives_suffix_second         = "http://exclude.gobwas.com"
+	pattern_alternatives_suffix                = "{https://*yusank.com,http://exclude.yusank.com}"
+	regexp_alternatives_suffix                 = `^(https:\/\/.*yusank\.com|http://exclude.yusank.com)$`
+	fixture_alternatives_suffix_first_match    = "https://safe.yusank.com"
+	fixture_alternatives_suffix_first_mismatch = "http://safe.yusank.com"
+	fixture_alternatives_suffix_second         = "http://exclude.yusank.com"
 
 	pattern_prefix                 = "abc*"
 	regexp_prefix                  = `^abc.*$`

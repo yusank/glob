@@ -1,8 +1,8 @@
 package glob
 
 import (
-	"github.com/gobwas/glob/compiler"
-	"github.com/gobwas/glob/syntax"
+	"github.com/yusank/glob/compiler"
+	"github.com/yusank/glob/syntax"
 )
 
 // Glob represents compiled glob pattern.

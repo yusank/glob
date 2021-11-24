@@ -3,11 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gobwas/glob"
 	"os"
 	"strings"
 	"testing"
 	"unicode/utf8"
+
+	"github.com/yusank/glob"
 )
 
 func benchString(r testing.BenchmarkResult) string {

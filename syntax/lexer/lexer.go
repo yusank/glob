@@ -3,7 +3,7 @@ package lexer
 import (
 	"bytes"
 	"fmt"
-	"github.com/gobwas/glob/util/runes"
+	"github.com/yusank/glob/util/runes"
 	"unicode/utf8"
 )
 

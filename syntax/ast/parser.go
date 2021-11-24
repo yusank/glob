@@ -3,7 +3,7 @@ package ast
 import (
 	"errors"
 	"fmt"
-	"github.com/gobwas/glob/syntax/lexer"
+	"github.com/yusank/glob/syntax/lexer"
 	"unicode/utf8"
 )
 

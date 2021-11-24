@@ -3,7 +3,7 @@ package debug
 import (
 	"bytes"
 	"fmt"
-	"github.com/gobwas/glob/match"
+	"github.com/yusank/glob/match"
 	"math/rand"
 )
 
